@@ -24,6 +24,7 @@ public class Book {
         return title;
     }
 
+
     public int getPages() {
         return pages;
     }
