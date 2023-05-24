@@ -4,11 +4,11 @@ public class Debug {
         int[] goodArray = {1,2,3,4,5};
         int[] emptyArray = {};
         System.out.println(calculateAverage(goodArray));
-        //Did not encounter errors, I set the result to double from the beginning to avoid issues.
-        System.out.println(calculateAverage(emptyArray));
-        //Returns error because the array is empty
-        System.out.println(goodArray[5]);
-        //Out of bounds because the index doesn't exist
+            //Did not encounter errors, I set the result to double from the beginning to avoid issues.
+        //System.out.println(calculateAverage(emptyArray));
+            //Returns error because the array is empty
+        //System.out.println(goodArray[5]);
+            //Out of bounds because the index doesn't exist
     }
 
     public static double calculateAverage(int[] list) {
@@ -24,3 +24,10 @@ public class Debug {
         return result / list.length;
     }
 }
+// I used the deubugger at lines 10 and 16 to check the errors. It was helpful because it told me the exact issues I was dealing with.
+//The issue on line 10 was an out-of-bounds error due to the index not existing in that array.
+// The issue on line 16 was a Null Pointer Exception because the array passed through did not have any values inside
+// it, and the debugger let me know by telling me the length of the array was zero.
+// I then commented out these lines of code to allow my code to function properly.
+
+
